@@ -1,7 +1,7 @@
 what is this?
 =============
-this is, most basically, meant to do basic sound generation. files should be relatively self-explanatory, but for the most part you can just use the core.maxpat file that opens on start.
-the current function of this project is to generate 1:1 counterpoint, based on a user-input cantus firmus.
+this is projects that I'm doing (currently all in Max/MSP) for my computer music class/for my div 2  
+the only current function of the only current project is to generate 1:1 counterpoint, based on a user-input cantus firmus.  
 
 instructions for use
 ------------------
