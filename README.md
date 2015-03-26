@@ -7,6 +7,7 @@ instructions for use
 ------------------
 when opening, you'll need to click the button above p childgrove to the left of the matrix, and the button labeled "new harmony". enter presentation mode for best ease of use (after loading childgrove)
 
-## notes
+notes
+------
 requires max/msp runtime (wrote in max7, but I *think* it'll work in 6)  
 don't trust the matrixctrl  
