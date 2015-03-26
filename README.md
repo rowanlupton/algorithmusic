@@ -9,5 +9,5 @@ when opening, you'll need to click the button above p childgrove to the left of 
 
 notes
 ------
-requires max/msp runtime (wrote in max7, but I *think* it'll work in 6)  
+requires [max/msp runtime](https://cycling74.com/downloads/runtime/) (wrote in max7, but I *think* it'll work in 6)
 don't trust the matrixctrl  
