@@ -2,7 +2,7 @@
 	"name" : "generatedmusic",
 	"version" : 1,
 	"creationdate" : -786815504,
-	"modificationdate" : -784143836,
+	"modificationdate" : -784155226,
 	"viewrect" : [ 415.0, 137.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -45,19 +45,6 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
-,
-			"parseMIDInote.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-
-		}
-,
-		"data" : 		{
-
-		}
-,
-		"externals" : 		{
 
 		}
 
