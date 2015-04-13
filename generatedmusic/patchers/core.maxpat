@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 504.0, 592.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "50"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -138,7 +151,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "int", "int" ],
+					"outlettype" : [ "int", "int", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -149,7 +162,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ -37.0, 202.0, 640.0, 480.0 ],
+						"rect" : [ 34.0, 202.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -197,7 +210,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 294.0, 210.0, 126.0, 22.0 ],
 									"style" : "",
-									"text" : "12 127 2"
+									"text" : "43 127 4"
 								}
 
 							}
@@ -210,7 +223,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 94.0, 190.0, 50.0, 22.0 ],
 									"style" : "",
-									"text" : "59"
+									"text" : "43"
 								}
 
 							}
@@ -267,19 +280,6 @@
 									"patching_rect" : [ 109.5, 100.0, 79.0, 22.0 ],
 									"style" : "",
 									"text" : "unpack 0 0 0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-44",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 132.0, 89.0, 22.0 ],
-									"style" : "",
-									"text" : "parseMIDInote"
 								}
 
 							}
@@ -362,24 +362,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-44", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-58", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-44", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-52", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -399,10 +381,9 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-44", 0 ],
+									"destination" : [ "obj-2", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 119.0, 123.0, 59.5, 123.0 ],
 									"source" : [ "obj-53", 0 ]
 								}
 
@@ -414,6 +395,15 @@
 									"hidden" : 0,
 									"midpoints" : [ 179.0, 123.0, 179.0, 123.0 ],
 									"source" : [ "obj-53", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-58", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-53", 0 ]
 								}
 
 							}
@@ -535,7 +525,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 191.5, 567.5, 19.0, 22.0 ],
+					"patching_rect" : [ 191.5, 549.5, 19.0, 22.0 ],
 					"style" : "",
 					"text" : "1"
 				}
@@ -548,7 +538,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 129.5, 538.0, 81.0, 22.0 ],
+					"patching_rect" : [ 129.5, 520.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "makenote"
 				}
@@ -1010,7 +1000,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 577.5, 538.0, 64.0, 22.0 ],
+					"patching_rect" : [ 577.5, 520.0, 64.0, 22.0 ],
 					"style" : "",
 					"text" : "makenote"
 				}
@@ -1051,7 +1041,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 622.5, 567.5, 19.0, 22.0 ],
+					"patching_rect" : [ 622.5, 549.5, 19.0, 22.0 ],
 					"style" : "",
 					"text" : "2"
 				}
@@ -1199,18 +1189,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-115",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 626.0, 306.0, 50.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"id" : "obj-113",
 									"maxclass" : "newobj",
@@ -2129,19 +2107,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-10",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 254.0, 621.0, 89.0, 22.0 ],
-									"style" : "",
-									"text" : "parseMIDInote"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 4,
@@ -2958,17 +2923,6 @@
 									"destination" : [ "obj-18", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 263.5, 645.0, 263.5, 645.0 ],
-									"source" : [ "obj-10", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 326.5, 606.0, 263.5, 606.0 ],
 									"source" : [ "obj-113", 0 ]
 								}
 
@@ -3090,15 +3044,6 @@
 									"hidden" : 0,
 									"midpoints" : [ 526.5, 189.0, 526.5, 189.0 ],
 									"source" : [ "obj-32", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-115", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-33", 6 ]
 								}
 
 							}
@@ -3425,7 +3370,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 577.5, 596.5, 64.0, 22.0 ],
+					"patching_rect" : [ 577.5, 578.5, 64.0, 22.0 ],
 					"style" : "",
 					"text" : "noteout 2"
 				}
@@ -4508,7 +4453,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 527.0, 170.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "48"
+					"text" : "12"
 				}
 
 			}
@@ -4518,7 +4463,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 129.5, 596.5, 81.0, 22.0 ],
+					"patching_rect" : [ 129.5, 578.5, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "noteout 1"
 				}
@@ -4605,7 +4550,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 289.0, 207.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "145"
+					"text" : "6"
 				}
 
 			}
@@ -4849,6 +4794,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-57", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-75", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4861,7 +4815,7 @@
 					"destination" : [ "obj-88", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 632.0, 563.0, 609.5, 563.0 ],
+					"midpoints" : [ 632.0, 545.0, 609.5, 545.0 ],
 					"source" : [ "obj-11", 1 ]
 				}
 
@@ -5031,7 +4985,7 @@
 					"destination" : [ "obj-24", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 201.0, 563.0, 170.0, 563.0, 170.0, 581.0, 170.0, 581.0 ],
+					"midpoints" : [ 201.0, 545.0, 170.0, 545.0, 170.0, 563.0, 170.0, 563.0 ],
 					"source" : [ "obj-54", 1 ]
 				}
 
@@ -5041,7 +4995,7 @@
 					"destination" : [ "obj-24", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 139.0, 562.5, 139.0, 562.5 ],
+					"midpoints" : [ 139.0, 544.5, 139.0, 544.5 ],
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -5223,13 +5177,6 @@
 				"bootpath" : "~/Documents/school/div2/computer music 2 2015F/projects/generatedmusic/data",
 				"patcherrelativepath" : "../data",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "parseMIDInote.maxpat",
-				"bootpath" : "~/Documents/school/div2/computer music 2 2015F/projects/generatedmusic/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
