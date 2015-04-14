@@ -38,6 +38,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 704.0, 218.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "7"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 735.0, 194.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "Llength"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-400",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -58,7 +84,6 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1119.0, 73.0, 24.0, 24.0 ],
-					"presentation_rect" : [ 1120.0, 73.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -71,7 +96,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1119.0, 114.0, 65.0, 22.0 ],
-					"presentation_rect" : [ 1120.0, 114.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "metro 250"
 				}
@@ -268,7 +292,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 900.0, 455.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 900.0, 470.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "10"
 				}
@@ -282,7 +305,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 885.0, 431.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 885.0, 429.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "8"
 				}
@@ -296,7 +318,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 870.0, 407.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 870.0, 407.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "7"
 				}
@@ -310,7 +331,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 856.0, 383.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 858.332031, 383.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "5"
 				}
@@ -324,7 +344,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 838.332031, 355.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 839.5, 355.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "3"
 				}
@@ -338,7 +357,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 821.5, 323.0, 50.0, 22.0 ],
-					"presentation_rect" : [ 822.0, 323.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "2"
 				}
@@ -801,8 +819,8 @@
 						"styles" : [ 							{
 								"name" : "multisliderBlue&Yellow",
 								"default" : 								{
-									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
-									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
+									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
+									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1638,7 +1656,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 344.5, 90.0, 74.0, 22.0 ],
-													"presentation_rect" : [ 344.5, 92.0, 0.0, 0.0 ],
 													"style" : "",
 													"text" : "prepend set"
 												}
@@ -1652,7 +1669,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 268.5, 90.0, 74.0, 22.0 ],
-													"presentation_rect" : [ 268.5, 90.0, 0.0, 0.0 ],
 													"style" : "",
 													"text" : "prepend set"
 												}
@@ -1666,7 +1682,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 192.5, 90.0, 74.0, 22.0 ],
-													"presentation_rect" : [ 191.5, 90.0, 0.0, 0.0 ],
 													"style" : "",
 													"text" : "prepend set"
 												}
@@ -2988,8 +3003,8 @@
 										"styles" : [ 											{
 												"name" : "multisliderBlue&Yellow",
 												"default" : 												{
-													"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
-													"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
+													"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
+													"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
 												}
 ,
 												"parentstyle" : "",
@@ -3646,8 +3661,8 @@
 						"styles" : [ 							{
 								"name" : "multisliderBlue&Yellow",
 								"default" : 								{
-									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
-									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
+									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
+									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4740,8 +4755,8 @@
 						"styles" : [ 							{
 								"name" : "multisliderBlue&Yellow",
 								"default" : 								{
-									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
-									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
+									"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
+									"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
 								}
 ,
 								"parentstyle" : "",
@@ -5321,6 +5336,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-358", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5829,6 +5853,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -5938,9 +5971,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-36" : [ "number[2]", "number[2]", 0 ],
 			"obj-89" : [ "number", "number", 0 ],
-			"obj-103" : [ "number[1]", "number[1]", 0 ]
+			"obj-103" : [ "number[1]", "number[1]", 0 ],
+			"obj-36" : [ "number[2]", "number[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -5978,13 +6011,17 @@
 				"type" : "TEXT",
 				"implicit" : 1
 			}
+, 			{
+				"name" : "Llength.mxo",
+				"type" : "iLaX"
+			}
  ],
 		"embedsnapshot" : 0,
 		"styles" : [ 			{
 				"name" : "multisliderBlue&Yellow",
 				"default" : 				{
-					"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ],
-					"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ]
+					"color" : [ 0.960784, 0.867826, 0.084811, 1.0 ],
+					"bgcolor" : [ 0.317647, 0.654902, 0.976471, 0.79 ]
 				}
 ,
 				"parentstyle" : "",
