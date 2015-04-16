@@ -2,7 +2,7 @@
 	"name" : "generatedmusic",
 	"version" : 1,
 	"creationdate" : -786815504,
-	"modificationdate" : -782935794,
+	"modificationdate" : -782929744,
 	"viewrect" : [ 125.0, 198.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -55,6 +55,16 @@
 ,
 		"code" : 		{
 			"rand.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"noteToKeySig.js" : 			{
+				"kind" : "javascript",
+				"local" : 1
+			}
+,
+			"keySigToNote.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
