@@ -25,13 +25,10 @@ function msg_int(x) {
 
 function convert(note) {
 	note%=keySig.length;
-	post("note before conversion",note,"\n");
 	if (note<0) {
 		note+=keySig.length;
-		post("note after conversion",note,"\n");
 	};
 	note=keySig[note];
-	post("keySig[note]",note,"\n");
 	
 	return(note);
 };

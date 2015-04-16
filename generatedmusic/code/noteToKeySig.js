@@ -25,18 +25,15 @@ function msg_int(x) {
 
 function convert(note) {
 	note%=12;
-	post("%note:",note,"\n");
 	var cont=true;
 	var i=0;
 	do {
 		if (keySig[i]==note) {
-			post("keySig = note at:",i,"\n");
 			cont=false;
 		} else if (i>keySig.length) {
 			post("note out of key\n");
 			cont=false;
 		};
-		post("exit if\n");
 		i++;
 	} while (cont);
 	
